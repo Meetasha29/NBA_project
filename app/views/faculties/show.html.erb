@@ -1,0 +1,27 @@
+<%= link_to 'Back', faculties_path %>
+
+<h2>Show Faculty</h2>
+
+<table summary="Subject detail view">
+  <tr>
+    <th>Name</th>
+    <td><%= @faculty.fname %></td>
+  </tr>
+  <tr>
+    <th>Faculty Id</th>
+    <td><%= @faculty.fid %></td>
+  </tr>
+  <tr>
+    <th>Created</th>
+    <td><%= @faculty.created_at %></td>
+  </tr>
+  <tr>
+    <th>Updated</th>
+    <td><%= @faculty.updated_at %></td>
+  </tr>
+
+  <%= link_to 'Edit', edit_faculty_path(@faculty.id) %> |
+
+</table>
+
+</div>

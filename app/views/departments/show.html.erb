@@ -1,0 +1,27 @@
+<%= link_to 'Back', departments_path %>
+
+<h2>Show Department</h2>
+
+<table summary="Subject detail view">
+  <tr>
+    <th>Name</th>
+    <td><%= @department.dname %></td>
+  </tr>
+  <tr>
+    <th>Department Id</th>
+    <td><%= @department.did %></td>
+  </tr>
+  <tr>
+    <th>Created</th>
+    <td><%= @department.created_at %></td>
+  </tr>
+  <tr>
+    <th>Updated</th>
+    <td><%= @department.updated_at %></td>
+  </tr>
+
+  <%= link_to 'Edit', edit_department_path(@department.id) %> |
+
+</table>
+
+</div>

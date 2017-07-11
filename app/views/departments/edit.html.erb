@@ -1,0 +1,15 @@
+<%= link_to("<< Back to List",departments_path) %>
+
+
+  <h2>Update Department</h2>
+
+  <%= form_for(@department) do |f| %>
+
+    <%= render(:partial => "form_department", :locals => {:f => f}) %>
+
+    <div class="form-buttons">
+      <%= submit_tag("Update Department") %>
+    </div>
+
+  <% end %>
+</div>

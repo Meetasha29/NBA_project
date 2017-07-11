@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Faculties</h1>
+<%= link_to 'Add New faculty', new_faculty_path %>
+<div><%= pluralize(@faculty.size, 'Faculty') %> found</div>
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @faculty.each do |t| %>
+      <tr>
+        <td><%= t.fid %></td>
+        <td><%= t.fname %></td>
+        <td><%= link_to 'Show', faculty_path(t.id) %></td>
+        <td><%= link_to 'Edit', edit_faculty_path(t.id) %></td>
+        <td><%= link_to 'Delete', delete_faculty_path(t.id) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

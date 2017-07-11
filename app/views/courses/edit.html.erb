@@ -1,0 +1,16 @@
+
+<%= link_to("<< Back to List",courses_path) %>
+
+
+  <h2>Update Course</h2>
+
+  <%= form_for(@course) do |f| %>
+
+    <%= render(:partial => "form_course", :locals => {:f => f}) %>
+
+    <div class="form-buttons">
+      <%= submit_tag("Update Course") %>
+    </div>
+
+  <% end %>
+</div>

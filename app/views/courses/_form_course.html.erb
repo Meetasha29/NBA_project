@@ -1,0 +1,24 @@
+<%= error_messages(@course)%>
+<table summary="Subject form fields">
+  <tr>
+    <th> <%=f.label(:cid)%></th>
+    <td><%= f.text_field(:cid) %></td>
+  </tr>
+  <tr>
+    <th><%= f.label(:cname)%></th>
+    <td><%= f.text_field(:cname) %></td>
+  </tr>
+  <tr>
+    <th><%= f.label(:grade_point)%></th>
+    <td><%= f.text_field(:grade_point) %></td>
+  </tr>
+  <tr>
+    <th><%= f.label(:max_students)%></th>
+    <td><%= f.text_field(:max_students) %></td>
+  </tr>
+  <tr>
+    <th><%= f.label(:min_students)%></th>
+    <td><%= f.text_field(:min_students) %></td>
+  </tr>
+
+</table>

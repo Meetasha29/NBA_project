@@ -1,0 +1,40 @@
+
+<%= link_to 'Back', courses_path %>
+
+<h2>Show Course</h2>
+
+<table summary="Subject detail view">
+  <tr>
+    <th>Name</th>
+    <td><%= @course.cname %></td>
+  </tr>
+  <tr>
+    <th>Course Id</th>
+    <td><%= @course.cid %></td>
+  </tr>
+  <tr>
+    <th>Grade Point</th>
+    <td><%= @course.grade_point%></td>
+  </tr>
+  <tr>
+    <th>Max_students</th>
+    <td><%= @course.max_students%></td>
+  </tr>
+  <tr>
+    <th>Min_students</th>
+    <td><%= @course.min_students%></td>
+  </tr>
+  <tr>
+    <th>Created</th>
+    <td><%= @course.created_at %></td>
+  </tr>
+  <tr>
+    <th>Updated</th>
+    <td><%= @course.updated_at %></td>
+  </tr>
+
+  <%= link_to 'Edit', edit_course_path(@course.id) %> |
+
+</table>
+
+</div>

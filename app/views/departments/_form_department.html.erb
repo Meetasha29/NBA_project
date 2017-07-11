@@ -1,0 +1,11 @@
+<%= error_messages(@department)%>
+<table summary="Subject form fields">
+  <tr>
+    <th> <%=f.label(:did)%></th>
+    <td><%= f.text_field(:did) %></td>
+  </tr>
+  <tr>
+    <th><%= f.label(:dname)%></th>
+    <td><%= f.text_field(:dname) %></td>
+  </tr>
+</table>

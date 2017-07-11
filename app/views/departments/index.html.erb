@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Departments</h1>
+<%= link_to 'Add New department', new_department_path %>
+<div><%= pluralize(@department.size, 'Department') %> found</div>
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @department.each do |t| %>
+      <tr>
+        <td><%= t.did %></td>
+        <td><%= t.dname %></td>
+        <td><%= link_to 'Show', department_path(t.id) %></td>
+        <td><%= link_to 'Edit', edit_department_path(t.id) %></td>
+        <td><%= link_to 'Delete', delete_department_path(t.id) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
