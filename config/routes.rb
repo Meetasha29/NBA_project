@@ -3,7 +3,9 @@ Rails.application.routes.draw do
 
 
 
-  root "courses#index"
+  root 'home#index'
+  devise_for :users, controllers: { registrations: 'registrations',sessions: 'sessions'}
+
   resources :courses do
     member do
       get :delete
@@ -20,6 +22,8 @@ Rails.application.routes.draw do
       get :delete
     end
   end
+
+
 
 
 

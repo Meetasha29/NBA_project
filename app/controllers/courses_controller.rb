@@ -1,6 +1,7 @@
 class CoursesController < ApplicationController
 
   before_action :set_course, only: [:show, :edit, :update, :delete]
+  before_action :authenticate_user!
 
 
   def index

@@ -1,5 +1,6 @@
 class DepartmentsController < ApplicationController
   before_action :set_department, only: [:show, :edit, :update, :delete]
+  before_action :authenticate_user!
 
 
   def index

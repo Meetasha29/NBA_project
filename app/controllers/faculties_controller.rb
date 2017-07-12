@@ -1,5 +1,6 @@
 class FacultiesController < ApplicationController
   before_action :set_faculty, only: [:show, :edit, :update, :delete]
+  before_action :authenticate_user!
 
 
   def index
